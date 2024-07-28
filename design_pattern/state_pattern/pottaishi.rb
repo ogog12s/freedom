@@ -1,0 +1,2 @@
+class Pottaishi < State
+end
