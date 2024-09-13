@@ -1,0 +1,54 @@
+name: "新規Issue"
+description: "新しいIssueを作成するためのテンプレートです"
+title: ''
+labels: ''
+assignees: ''
+
+body:
+  - type: markdown
+    attributes:
+      value: "### 目的\nこのIssueで達成しようとしている目的を記入してください。"
+
+  - type: input
+    id: purpose
+    attributes:
+      label: "目的"
+      description: "このIssueで解決する問題や達成したいことを記載してください。"
+      placeholder: "例: ユーザーのログイン速度を改善する"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### やること\nこのIssueで具体的に実施する作業内容を記入してください。"
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "やること"
+      description: "実施する作業を箇条書きで記入してください。"
+      placeholder: "- ログインAPIのパフォーマンスを最適化\n- キャッシュの導入"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### リリースタイミング\nリリースや期日がある場合に記入してください。"
+
+  - type: input
+    id: release_timing
+    attributes:
+      label: "リリースタイミング"
+      description: "リリースのタイミングがある場合、こちらに記載してください。"
+      placeholder: "例: 次回リリーススプリント"
+
+  - type: markdown
+    attributes:
+      value: "### 補足\n追加の情報や関連するリンクなどがあれば記入してください。"
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "補足"
+      description: "特筆すべき点や関連する情報があれば記入してください。"
+      placeholder: "例: 関連するPRやIssueへのリンク"
