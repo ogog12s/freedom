@@ -1,4 +1,5 @@
 name: issueテンプレート
+description: issueテンプレート
 body:
   - type: textarea
     attributes:
