@@ -1,0 +1,19 @@
+name: issueテンプレート
+body:
+  - type: textarea
+    attributes:
+      label: 目的
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: やること
+      description:
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: リリースタイミング
+  - type: textarea
+    attributes:
+      label: 補足
