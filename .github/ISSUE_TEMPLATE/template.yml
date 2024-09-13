@@ -1,8 +1,5 @@
 name: "新規Issue"
 description: "新しいIssueを作成するためのテンプレートです"
-title: ''
-labels: ''
-assignees: ''
 
 body:
   - type: markdown
